@@ -1,2 +1,2 @@
 // @demo
-// basic:12 custom:12
+// basic:24 render:24 custom:24

@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-export default class Checkbox extends React.Component {
+export default class Modal extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -48,14 +48,18 @@ export default class Checkbox extends React.Component {
                             {this.props.children}
                         </div>
                         <div className="modal-footer">
-                            <button type="button"
-                                    onClick={this.handleCancel.bind(this)}
-                                    className="btn btn-secondary">
-                                {this.props.cancelText}
-                            </button>
-                            <button type="button"
-                                    className="btn btn-primary"
-                                    onClick={this.handleOk.bind(this)}>{this.props.okText}</button>
+                            {this.props.renderOperateButton() ? this.props.renderOperateButton(this.handleOk.bind(this), this.handleCancel.bind(this)) :
+                                <div>
+                                    <button type="button"
+                                            onClick={this.handleCancel.bind(this)}
+                                            className="btn btn-secondary">
+                                        {this.props.cancelText}
+                                    </button>
+                                    <button type="button"
+                                            className="btn btn-primary"
+                                            onClick={this.handleOk.bind(this)}>{this.props.okText}</button>
+                                </div>
+                            }
                         </div>
 
                     </div>
@@ -65,13 +69,28 @@ export default class Checkbox extends React.Component {
     }
 }
 
-Checkbox.defaultProps = {
+Modal.defaultProps = {
+    // @desc 取消按钮文字
     cancelText: '取消',
+
+    // @desc 确认按钮文字
     okText: '确定',
+
+    // @desc 是否显示模态框
     show: false,
+
+    // @desc 模态框标题
     title: '',
+
+    // @desc 点击确认回调
     onOk: ()=> {
     },
+
+    // @desc 点击取消回调
     onCancel: ()=> {
+    },
+
+    // @desc 自定义按钮
+    renderOperateButton: ()=> {
     }
 }
