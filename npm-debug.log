@@ -12,19 +12,19 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/andycall/baiduYun/Baidu/awesome/lib/pc/modal',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/andycall/.npm/fit-modal/1.1.41/package.tgz not in flight; packing
-9 info lifecycle fit-modal@1.1.41~prepublish: fit-modal@1.1.41
-10 silly lifecycle fit-modal@1.1.41~prepublish: no script for prepublish, continuing
-11 verbose tar pack [ '/Users/andycall/.npm/fit-modal/1.1.41/package.tgz',
+8 verbose addLocalDirectory /Users/andycall/.npm/fit-modal/1.1.46/package.tgz not in flight; packing
+9 info lifecycle fit-modal@1.1.46~prepublish: fit-modal@1.1.46
+10 silly lifecycle fit-modal@1.1.46~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/andycall/.npm/fit-modal/1.1.46/package.tgz',
 11 verbose tar pack   '/Users/andycall/baiduYun/Baidu/awesome/lib/pc/modal' ]
-12 verbose tarball /Users/andycall/.npm/fit-modal/1.1.41/package.tgz
+12 verbose tarball /Users/andycall/.npm/fit-modal/1.1.46/package.tgz
 13 verbose folder /Users/andycall/baiduYun/Baidu/awesome/lib/pc/modal
-14 verbose addLocalTarball adding from inside cache /Users/andycall/.npm/fit-modal/1.1.41/package.tgz
-15 silly cache afterAdd fit-modal@1.1.41
-16 verbose afterAdd /Users/andycall/.npm/fit-modal/1.1.41/package/package.json not in flight; writing
-17 verbose afterAdd /Users/andycall/.npm/fit-modal/1.1.41/package/package.json written
+14 verbose addLocalTarball adding from inside cache /Users/andycall/.npm/fit-modal/1.1.46/package.tgz
+15 silly cache afterAdd fit-modal@1.1.46
+16 verbose afterAdd /Users/andycall/.npm/fit-modal/1.1.46/package/package.json not in flight; writing
+17 verbose afterAdd /Users/andycall/.npm/fit-modal/1.1.46/package/package.json written
 18 silly publish { name: 'fit-modal',
-18 silly publish   version: '1.1.41',
+18 silly publish   version: '1.1.46',
 18 silly publish   description: '模态框',
 18 silly publish   main: 'lib/index.js',
 18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
@@ -34,15 +34,15 @@
 18 silly publish   author: '',
 18 silly publish   license: 'ISC',
 18 silly publish   dependencies:
-18 silly publish    { 'fit-style': '^1.1.39',
+18 silly publish    { 'fit-style': '^1.1.44',
 18 silly publish      react: '^0.14.7',
 18 silly publish      classnames: '^2.2.3',
 18 silly publish      'react-dom': '^0.14.7' },
 18 silly publish   readme: '# 模态框\n\n---\n\n````jsx\nnpm install fit-modal /* or */ fis3 install fit-modal\n````',
 18 silly publish   readmeFilename: 'readme.md',
-18 silly publish   gitHead: 'd6407a93f3dde0e1ae3a4d5e62baab67d735b455',
-18 silly publish   _id: 'fit-modal@1.1.41',
-18 silly publish   _shasum: 'ad6822c495045ca25c7160da285abd5a564a0f56',
+18 silly publish   gitHead: '91e6edf059e53b2fb507842cdb309727583aa1d2',
+18 silly publish   _id: 'fit-modal@1.1.46',
+18 silly publish   _shasum: '1871e695ca3c7856abdd940382fc271c3a03fc1f',
 18 silly publish   _from: '.' }
 19 verbose getPublishConfig undefined
 20 silly mapToRegistry name fit-modal
@@ -50,28 +50,28 @@
 22 silly mapToRegistry registry https://registry.npmjs.org/
 23 silly mapToRegistry uri https://registry.npmjs.org/fit-modal
 24 verbose publish registryBase https://registry.npmjs.org/
-25 silly publish uploading /Users/andycall/.npm/fit-modal/1.1.41/package.tgz
+25 silly publish uploading /Users/andycall/.npm/fit-modal/1.1.46/package.tgz
 26 verbose request uri https://registry.npmjs.org/fit-modal
 27 verbose request sending authorization for write operation
-28 info attempt registry request try #1 at 12:07:37
+28 info attempt registry request try #1 at 13:41:09
 29 verbose request using bearer token for auth
-30 verbose request id 779c91ba221773bf
+30 verbose request id 114151fdb8ecacee
 31 http request PUT https://registry.npmjs.org/fit-modal
 32 http 403 https://registry.npmjs.org/fit-modal
 33 verbose headers { 'content-type': 'application/json',
 33 verbose headers   'cache-control': 'max-age=300',
 33 verbose headers   'content-length': '96',
 33 verbose headers   'accept-ranges': 'bytes',
-33 verbose headers   date: 'Fri, 26 Feb 2016 04:07:38 GMT',
+33 verbose headers   date: 'Fri, 26 Feb 2016 05:41:10 GMT',
 33 verbose headers   via: '1.1 varnish',
 33 verbose headers   connection: 'keep-alive',
-33 verbose headers   'x-served-by': 'cache-itm7420-ITM',
+33 verbose headers   'x-served-by': 'cache-itm7423-ITM',
 33 verbose headers   'x-cache': 'MISS',
 33 verbose headers   'x-cache-hits': '0',
-33 verbose headers   'x-timer': 'S1456459657.412083,VS0,VE691' }
+33 verbose headers   'x-timer': 'S1456465269.622113,VS0,VE585' }
 34 verbose request invalidating /Users/andycall/.npm/registry.npmjs.org/fit-modal on PUT
 35 error publish Failed PUT 403
-36 verbose stack Error: "You cannot publish over the previously published version 1.1.41." : fit-modal
+36 verbose stack Error: "You cannot publish over the previously published version 1.1.46." : fit-modal
 36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
 36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
 36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
@@ -90,7 +90,7 @@
 42 error node v5.2.0
 43 error npm  v3.5.2
 44 error code E403
-45 error "You cannot publish over the previously published version 1.1.41." : fit-modal
+45 error "You cannot publish over the previously published version 1.1.46." : fit-modal
 46 error If you need help, you may report this error at:
 46 error     <https://github.com/npm/npm/issues>
 47 verbose exit [ 1, true ]
