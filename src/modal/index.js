@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import './index.scss'
 
 export default class Modal extends React.Component {
@@ -25,39 +26,50 @@ export default class Modal extends React.Component {
     }
 
     render() {
+        const {className, show, title, children, renderOperateButton, cancelText, okText, ...others} = this.props
+        const classes = classNames({
+            '_namespace': true,
+            'modal': true,
+            'fade': true,
+            'in': true,
+            [className]: className
+        })
+
+        others.style = others.style || {}
+        others.style.display = show ? 'block' : null
+
         return (
-            <div className="_namespace modal fade in"
-                 onClick={this.handleOutClick.bind(this)}
-                 tabIndex="-1"
-                 style={{display:this.props.show?'block':null}}>
+            <div {...others} className={classes}
+                             onClick={this.handleOutClick.bind(this)}
+                             tabIndex="-1">
                 <div className="modal-dialog"
                      onClick={this.handleModalClick.bind(this)}>
                     <div className="modal-content">
-                        {this.props.title === '' ? null :
+                        {title === '' ? null :
                             <div className="modal-header">
                                 <button type="button"
                                         className="close">
                                     <span onClick={this.handleCancel.bind(this)}>×</span>
                                     <span className="sr-only">Close</span>
                                 </button>
-                                <h4 className="modal-title">{this.props.title}</h4>
+                                <h4 className="modal-title">{title}</h4>
                             </div>
                         }
                         <div className="modal-body"
-                             style={{marginTop:this.props.title===''?20:null}}>
-                            {this.props.children}
+                             style={{marginTop:title===''?20:null}}>
+                            {children}
                         </div>
                         <div className="modal-footer">
-                            {this.props.renderOperateButton() ? this.props.renderOperateButton(this.handleOk.bind(this), this.handleCancel.bind(this)) :
+                            {renderOperateButton() ? renderOperateButton(this.handleOk.bind(this), this.handleCancel.bind(this)) :
                                 <div>
                                     <button type="button"
                                             onClick={this.handleCancel.bind(this)}
                                             className="btn btn-secondary">
-                                        {this.props.cancelText}
+                                        {cancelText}
                                     </button>
                                     <button type="button"
                                             className="btn btn-primary"
-                                            onClick={this.handleOk.bind(this)}>{this.props.okText}</button>
+                                            onClick={this.handleOk.bind(this)}>{okText}</button>
                                 </div>
                             }
                         </div>
