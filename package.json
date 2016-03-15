@@ -1,6 +1,6 @@
 {
   "name": "fit-modal",
-  "version": "1.1.57",
+  "version": "1.1.58",
   "description": "模态框",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,6 @@
     "fit-style": "^1.1.49",
     "react": "^0.14.7",
     "classnames": "^2.2.1",
-    "fit-render-to": "^1.0.39"
+    "fit-render-to": "^1.0.40"
   }
 }
