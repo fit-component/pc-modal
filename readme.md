@@ -3,5 +3,5 @@
 ---
 
 ````jsx
-npm install fit-modal /* or */ fis3 install fit-modal
+npm install fit-modal
 ````
