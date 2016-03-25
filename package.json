@@ -1,6 +1,6 @@
 {
   "name": "fit-modal",
-  "version": "1.1.61",
+  "version": "1.1.62",
   "description": "模态框",
   "main": "lib/index.js",
   "scripts": {
@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fit-style": "^1.1.51",
+    "fit-style": "^1.1.52",
     "react": "^0.14.7",
     "classnames": "^2.2.1",
-    "fit-render-to": "^1.0.42"
+    "fit-render-to": "^1.0.43"
   }
 }
