@@ -30,21 +30,27 @@ export default class Modal extends React.Component {
         const {className, show, title, children, renderOperateButton, cancelText, okText, ...others} = this.props
         const classes = classNames({
             '_namespace': true,
-            'modal': true,
-            'fade': true,
-            'in': true,
-            [className]: className
+            'modal'     : true,
+            'fade'      : true,
+            'in'        : true,
+            [className] : className
         })
 
         others.style = others.style || {}
         others.style.display = show ? 'block' : null
+
+        const extraModalSizeClass = classNames({
+            'modal-dialog': true,
+            'modal-lg'    : this.props.size === 'large',
+            'modal-sm'    : this.props.size === 'small'
+        })
 
         return (
             <RenderTo>
                 <div {...others} className={classes}
                                  onClick={this.handleOutClick.bind(this)}
                                  tabIndex="-1">
-                    <div className="modal-dialog"
+                    <div className={extraModalSizeClass}
                          onClick={this.handleModalClick.bind(this)}>
                         <div className="modal-content">
                             {title === '' ? null :
@@ -107,5 +113,8 @@ Modal.defaultProps = {
 
     // @desc 自定义按钮
     renderOperateButton: ()=> {
-    }
+    },
+
+    // @desc 大小
+    size: 'normal'
 }
