@@ -49,6 +49,7 @@ export default class Modal extends React.Component {
             <RenderTo>
                 <div {...others} className={classes}
                                  onClick={this.handleOutClick.bind(this)}
+                                 data-modal-backdrop={this.props.backdrop}
                                  tabIndex="-1">
                     <div className={extraModalSizeClass}
                          onClick={this.handleModalClick.bind(this)}>
@@ -114,6 +115,10 @@ Modal.defaultProps = {
     // @desc 自定义按钮
     renderOperateButton: ()=> {
     },
+
+    // @desc 背景幕
+    // @enum true false static
+    backdrop: true,
 
     // @desc 大小
     size: 'normal'
