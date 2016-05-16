@@ -1,8 +1,8 @@
-import React from 'react'
-import {Button, ButtonGroup} from 'fit-button'
-import Modal from 'fit-modal'
+import * as React from 'react'
+import {Button, ButtonGroup} from '../../../button/src'
+import Modal from '../../src'
 
-export default class Demo extends React.Component {
+export default class Demo extends React.Component <any,any> {
     constructor(props) {
         super(props)
         this.state = {
