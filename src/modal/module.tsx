@@ -22,17 +22,17 @@ export interface PropsInterface {
     /**
      * 点击确认回调
      */
-    onOk: ()=> void
+    onOk?: ()=> void
 
     /**
      * 点击取消回调
      */
-    onCancel: ()=> void
+    onCancel?: ()=> void
 
     /**
      * 自定义按钮
      */
-    renderOperateButton: ()=>void
+    renderOperateButton?: (onOk?: ()=>void, onCancel?: ()=>void)=>void
 
     /**
      * 背景幕
@@ -43,7 +43,7 @@ export interface PropsInterface {
      * 大小
      */
     size?: string
-
+    
     [x: string]: any
 }
 

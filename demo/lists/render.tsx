@@ -3,7 +3,7 @@ import {Button, ButtonGroup} from '../../../button/src'
 import Modal from '../../src'
 
 export default class Demo extends React.Component <any,any> {
-    constructor(props) {
+    constructor(props:any) {
         super(props)
         this.state = {
             show: false
@@ -28,7 +28,7 @@ export default class Demo extends React.Component <any,any> {
         })
     }
 
-    renderOperateButton(triggerOk, triggerCancel) {
+    renderOperateButton(triggerOk:Function, triggerCancel:Function) {
         return (
             <div>
                 <Button onClick={triggerOk}>我知道了</Button>

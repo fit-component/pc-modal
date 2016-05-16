@@ -3,7 +3,7 @@ import {Button, ButtonGroup} from '../../../button/src'
 import Modal from '../../src'
 
 export default class Demo extends React.Component <any,any> {
-    constructor(props) {
+    constructor(props:any) {
         super(props)
         this.state = {
             show    : false,
@@ -11,7 +11,7 @@ export default class Demo extends React.Component <any,any> {
         }
     }
 
-    handleShowModal(backdrop = true) {
+    handleShowModal(backdrop:boolean = true) {
         this.setState({
             show    : true,
             backdropClickToClose: backdrop

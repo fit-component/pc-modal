@@ -3,6 +3,7 @@ import * as classNames from 'classnames'
 import RenderTo from '../../../../common/render-to/src'
 import * as module from './module'
 import {others} from '../../../../common/transmit-transparently/src'
+import Button from '../../../button/src'
 import './index.scss'
 
 export default class Modal extends React.Component <module.PropsInterface,module.StateInterface> {
@@ -39,7 +40,7 @@ export default class Modal extends React.Component <module.PropsInterface,module
             'modal': true,
             'fade': true,
             'in': true,
-            [className]: className
+            [className]: !!className
         })
         let _others: any = others(new module.Props(), this.props)
 
@@ -77,14 +78,12 @@ export default class Modal extends React.Component <module.PropsInterface,module
                             <div className="modal-footer">
                                 {renderOperateButton() ? renderOperateButton(this.handleOk.bind(this), this.handleCancel.bind(this)) :
                                 <div>
-                                    <button type="button"
-                                            onClick={this.handleCancel.bind(this)}
-                                            className="btn btn-secondary">
+                                    <Button onClick={this.handleCancel.bind(this)}
+                                            type="secondary">
                                         {cancelText}
-                                    </button>
-                                    <button type="button"
-                                            className="btn btn-primary"
-                                            onClick={this.handleOk.bind(this)}>{okText}</button>
+                                    </Button>
+                                    <Button type="primary"
+                                            onClick={this.handleOk.bind(this)}>{okText}</Button>
                                 </div>
                                     }
                             </div>
