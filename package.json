@@ -1,6 +1,6 @@
 {
   "name": "fit-modal",
-  "version": "3.0.17",
+  "version": "3.0.18",
   "description": "模态框",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "react": "^15.0.1",
     "classnames": "^2.2.3",
     "fit-render-to": "^3.1.1",
-    "fit-transmit-transparently": "^3.1.6",
-    "fit-button": "^3.1.8"
+    "fit-transmit-transparently": "^3.1.7",
+    "fit-button": "^3.1.9"
   }
 }
