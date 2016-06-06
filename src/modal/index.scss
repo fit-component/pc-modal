@@ -103,7 +103,7 @@ button.close {
     position: relative;
     background-color: $modal-content-bg;
     background-clip: padding-box;
-    border: 1px solid $modal-content-border-color;
+    box-shadow: 0 0 50px #ccc;
     border-radius: $border-radius-lg;
     outline: 0;
 }
