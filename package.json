@@ -1,6 +1,6 @@
 {
   "name": "fit-modal",
-  "version": "3.0.39",
+  "version": "3.0.41",
   "description": "模态框",
   "main": "lib/index.js",
   "scripts": {
@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.0.1",
+    "react": "^0.14.0 || ^15.0.0",
     "classnames": "^2.2.3",
-    "fit-render-to": "^3.1.8",
-    "fit-transmit-transparently": "^3.1.21",
-    "fit-button": "^3.1.29"
+    "fit-render-to": "^3.1.10",
+    "fit-transmit-transparently": "^3.1.23",
+    "fit-button": "^3.1.31"
   },
   "typings": "lib/index.d.ts"
 }
