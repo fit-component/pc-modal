@@ -1,6 +1,6 @@
 {
   "name": "fit-modal",
-  "version": "3.0.44",
+  "version": "3.0.45",
   "description": "模态框",
   "main": "lib/index.js",
   "scripts": {
